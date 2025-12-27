@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3d4d4;
+  color: #252222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #8f5151b9;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cart span {
+  background: orange;
+  color: white;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.8rem;
+}
+
+.product {
+  padding: 1rem;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav {
+  position: absolute;
+  top: 45%;
+  background: rgb(247, 229, 229);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbnails img.active {
+  border: 2px solid orange;
+  opacity: 1;
+}
+
+.info h5 {
+  color: rgb(44, 23, 102);
+  letter-spacing: 1px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.discount {
+  background: #ffe5cc;
+  color: orange;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.qty button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(156, 130, 113);
+  cursor: pointer;
+}
+
+.add-btn {
+  width: 100%;
+  margin-top: 1rem;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .gallery, .info {
+    flex: 1;
+  }
+}
